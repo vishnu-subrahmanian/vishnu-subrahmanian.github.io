@@ -1,0 +1,121 @@
+.article-card {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid rgba(20, 26, 24, 0.08);
+  border-radius: 8px;
+  padding: 24px;
+  transition: border-color 220ms ease;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  border-color: rgba(73, 111, 134, 0.26);
+}
+
+.article-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-card__body {
+  min-width: 0;
+}
+
+.article-card__date {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.article-card__read-time {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.article-card__title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.article-card__summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 10px;
+  max-width: 760px;
+}
+
+.article-card__tags {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.article-card__tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--primary);
+  background: var(--chip-green);
+  padding: 5px 8px;
+  border-radius: 999px;
+}
+
+.article-card__cta {
+  min-width: 76px;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--primary);
+}
+
+.article-card:hover .article-card__cta {
+  border-color: var(--accent-blue);
+  background: rgba(219, 233, 238, 0.54);
+}
+
+@media (max-width: 780px) {
+  .article-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .article-card__meta {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-card__cta {
+    width: max-content;
+  }
+}
+
+@media (max-width: 520px) {
+  .article-card {
+    padding: 20px;
+  }
+
+  .article-card__title {
+    font-size: 18px;
+  }
+}

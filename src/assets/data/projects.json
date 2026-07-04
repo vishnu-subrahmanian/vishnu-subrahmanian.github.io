@@ -1,0 +1,34 @@
+[
+    {
+        "id": "lexical-vs-semantic-search",
+        "slug": "lexical-vs-semantic-search",
+        "title": "Lexical vs Semantic Search",
+        "year": 2026,
+        "status": "done",
+        "description": "Compared lexical search (Postgres full-text), vector search (pgvector + OpenAI embeddings), and hybrid retrieval (Reciprocal Rank Fusion) on a real corpus of 10 LangChain study notes. Evaluated 15 hand-crafted queries across exact, semantic, and ambiguous buckets with Precision@5 scoring.",
+        "highlights": [
+            "Lexical hit@5 on semantic queries: 0.00 — complete failure on paraphrased intent",
+            "Vector hit@5 on exact queries: 1.00 — challenges the common assumption that vector search struggles on keywords",
+            "Hybrid doesn't always beat vector alone — a bad lexical signal dilutes RRF fusion on ambiguous queries",
+            "Single Postgres database serving both full-text and vector search — no separate search engine needed"
+        ],
+        "stack": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "pgvector",
+            "OpenAI text-embedding-3-small",
+            "Postgres FTS (ts_rank)",
+            "Docker"
+        ],
+        "tags": [
+            "Search Systems",
+            "RAG",
+            "Python",
+            "PostgreSQL"
+        ],
+        "github": "https://github.com/vishnu-subrahmanian/lexical-vs-semantic-search",
+        "linkedin": "https://www.linkedin.com/in/vishnuv14",
+        "article_slug": "lexical-vs-semantic-search"
+    }
+]

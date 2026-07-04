@@ -1,0 +1,34 @@
+[
+    {
+        "id": "lexical-vs-semantic-search",
+        "slug": "lexical-vs-semantic-search",
+        "title": "Lexical vs Semantic Search - What the data actually shows",
+        "date": "2026-07-01",
+        "tags": [
+            "Search Systems",
+            "RAG",
+            "Python",
+            "PostgreSQL"
+        ],
+        "summary": "I tested BM25-adjacent, vector, and hybrid retrieval on 10 real markdown files. Lexical hit@5 on semantic queries was 0.00. Vector didn't struggle on exact terms. And hybrid didn't always win. Here's what the data actually said.",
+        "linkedin_url": "https://www.linkedin.com/posts/vishnuv14_lexical-vs-vector-search-ugcPost-7477957328567455744-T540/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-Kl0BYmQzQzbdHUNWqd_9lSm8AY1RPxM",
+        "read_time": "6 min",
+        "featured": true
+    },
+    {
+        "id": "dynamic-model-routing",
+        "slug": "dynamic-model-routing",
+        "title": "Dynamic Model Routing in AI Agent Systems",
+        "date": "2026-05-01",
+        "tags": [
+            "LLM",
+            "Agents",
+            "Architecture",
+            "AI"
+        ],
+        "summary": "Not every query needs GPT-4. Four practical patterns for routing between models at runtime — keyword routing, cost-tier routing, tool-intent routing, and try-cheap-with-fallback. When to use each and what you trade off.",
+        "linkedin_url": "https://www.linkedin.com/posts/vishnuv14_model-routing-for-ai-agents-with-langchain-ugcPost-7474332801635631104-HJLH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACm-Kl0BYmQzQzbdHUNWqd_9lSm8AY1RPxM",
+        "read_time": "5 min",
+        "featured": false
+    }
+]

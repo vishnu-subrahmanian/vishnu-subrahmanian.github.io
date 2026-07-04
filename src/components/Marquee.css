@@ -1,0 +1,40 @@
+.marquee {
+  overflow: hidden;
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 22px 32px;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 44s linear infinite;
+}
+
+.marquee__text {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: rgba(38, 63, 56, 0.58);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .marquee {
+    padding: 18px 20px;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

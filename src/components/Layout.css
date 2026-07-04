@@ -1,0 +1,11 @@
+.layout {
+  max-width: 1120px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    padding: 0 20px;
+  }
+}
