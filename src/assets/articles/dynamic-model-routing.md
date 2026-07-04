@@ -1,5 +1,3 @@
----
-
 Not every query needs GPT-4.
 
 That's the core insight most AI agent architectures miss early on. When you're building a demo, defaulting to the most capable model makes sense — you want the best output, fast. But in production, that default becomes a cost and latency problem at scale.
