@@ -1,5 +1,21 @@
 [
     {
+        "id": "okf",
+        "slug": "okf",
+        "title": "Open Knowledge Format: Building Both Sides",
+        "date": "2026-07-21",
+        "tags": [
+            "RAG",
+            "AI Agents",
+            "Architecture",
+            "PostgreSQL"
+        ],
+        "summary": "Google's Open Knowledge Format represents agent knowledge as linked markdown files instead of a vector store. I built both the producer and consumer to understand it hands-on — and found its retrieval mechanism is structurally the same lexical search that failed on paraphrased queries in an earlier benchmark.",
+        "linkedin_url": "",
+        "read_time": "7 min",
+        "featured": false
+    },
+    {
         "id": "lexical-vs-semantic-search",
         "slug": "lexical-vs-semantic-search",
         "title": "Lexical vs Semantic Search - What the data actually shows",

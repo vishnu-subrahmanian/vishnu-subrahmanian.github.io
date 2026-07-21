@@ -1,5 +1,36 @@
 [
     {
+        "id": "okf",
+        "slug": "okf",
+        "title": "Open Knowledge Format: Building Both Sides",
+        "year": 2026,
+        "status": "done",
+        "description": "Built a producer/consumer implementation of Google's Open Knowledge Format (OKF v0.1) to understand it hands-on: a Postgres-to-OKF generator with LLM-enriched concept docs, a spec conformance validator, and a retrieval + text-to-SQL consumer with no vector database — just keyword scoring and markdown link traversal.",
+        "highlights": [
+            "Producer + consumer implementation — introspects Postgres, generates a spec-conformant bundle, and reads it back to answer questions",
+            "Retrieval mechanism is structurally lexical search — same paraphrase-matching weakness measured in an earlier hybrid-search benchmark",
+            "Foreign-key relationships become one-hop markdown link traversal at query time — deterministic and inspectable vs. embedding proximity",
+            "Zero vector database or embedding index — full pipeline runs on filesystem markdown + git"
+        ],
+        "stack": [
+            "Python",
+            "PostgreSQL",
+            "OpenAI API",
+            "python-frontmatter",
+            "PyYAML"
+        ],
+        "tags": [
+            "Knowledge Graphs",
+            "RAG",
+            "Python",
+            "PostgreSQL",
+            "AI Agents"
+        ],
+        "github": "https://github.com/vishnu-subrahmanian/okf",
+        "linkedin": "https://www.linkedin.com/in/vishnuv14",
+        "article_slug": "okf"
+    },
+    {
         "id": "lexical-vs-semantic-search",
         "slug": "lexical-vs-semantic-search",
         "title": "Lexical vs Semantic Search",
