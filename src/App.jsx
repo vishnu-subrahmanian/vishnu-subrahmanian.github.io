@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -6,7 +6,7 @@ import ArticleDetail from './pages/ArticleDetail';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav />
       <main style={{ paddingTop: '60px' }}>
         <Routes>
@@ -15,6 +15,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
